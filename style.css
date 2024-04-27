@@ -15,7 +15,7 @@ nav, section, footer {
 
 nav {
 	background-color: rgb(32, 32, 32);
-	min-height: 30px;
+	min-height: 40px;
 	position: sticky;
 	top: 0;
 	display: flex;
@@ -30,18 +30,28 @@ nav div {
 	border: 2px;
 	border-color: rgb(3, 3, 3);
 	border-style:groove;
-	width: 75px;
+	width: 100px;
 	text-align: center;
-	padding-top: 3px;
+	padding-top: 7px;
 }
 
 nav a {
+	text-decoration: none;
+}
+
+nav a:link {
 	font-family: Tahoma, sans-serif;
 	color: white;
+	font-size: 30;
+}
+
+nav a:visited {
+	font-family: Tahoma, sans-serif;
+	color: rgb(216, 216, 216);
 }
 
 .s1, .s2, .s3 {
-	scroll-margin-top: 35px;
+	scroll-margin-top: 25px;
 }
 
 section.s1 {
