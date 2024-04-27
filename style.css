@@ -1,5 +1,5 @@
 body, nav, section, footer {
-	background-color:rgb(32, 32, 32);
+	background-color:rgb(0, 10, 24);
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -7,14 +7,16 @@ body, nav, section, footer {
 }
 
 nav, section, footer {
-	border: 3px;
-	border-color: rgb(56, 56, 56);
-	border-style:groove;
+	border: 2px;
+	border-left: 0;
+	border-right: 0;
+	border-color: rgb(10, 20, 34);
+	border-style:double;
 	padding: 10px;
 }
 
 nav {
-	background-color: rgb(32, 32, 32);
+	background-color: rgb(0, 10, 24);
 	min-height: 45px;
 	position: sticky;
 	top: 0;
@@ -23,24 +25,23 @@ nav {
 	border-top: 0;
 	border-left: 0;
 	border-right: 0;
+	justify-content: center;
 }
 
 nav div {
-	background-color: rgb(56, 56, 56);
-	border: 2px;
-	border-color: rgb(3, 3, 3);
-	border-style:groove;
-	width: 110px;
 	text-align: center;
+	min-width: 5vw;
+	border: 0px;
 	margin: 0;
 	padding: 0;
-	padding-top: 8px;
+	padding-top: 11px;
 }
 
 nav a {
-	font-family: Tahoma, sans-serif;
-	color: white;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
+	letter-spacing: 2px;
 }
 
 a {
@@ -48,14 +49,23 @@ a {
 	padding: 0;
 	margin: 0;
 	border: 0;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
-.s1, .s2, .s3 {
+div.overlayBlue {
+	background: rgba(10, 20, 34, 0.50);
+	z-index: 2;
+	min-height: 850px;
+	overflow: hidden;
+}
+
+.s1, .s2, .s3, .s4, .s5 {
 	scroll-margin-top: 25px;
 }
 
 section.s1 {
-	background-color: rgb(56, 56, 56);
+	background-color: rgb(10, 20, 34);
 	min-height: 850px;
 	background-image: url("assets/picture-me.webp");
 	background-attachment: fixed;
@@ -63,28 +73,42 @@ section.s1 {
   	background-repeat: no-repeat;
   	background-size: cover;
 	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 @media only screen and (max-width: 650px) {
-	section.s1 {
+	section.s1, div.overlayBlue {
 		min-height: 550px;
 	}
 }
 
 section.s2 {
 	min-height: 600px;
-	background-color:rgb(32, 32, 32);
+	background-color:rgb(0, 10, 24);
 	justify-content: center;
 }
 
 section.s3 {
 	min-height: 600px;
-	background-color: rgb(56, 56, 56);
+	background-color: rgb(10, 20, 34);
+	border: 0;
+}
+
+section.s4 {
+	min-height: 600px;
+	background-color:rgb(0, 10, 24);
+}
+
+section.s5 {
+	min-height: 600px;
+	background-color: rgb(10, 20, 34);
 }
 
 footer {
 	min-height: 25px;
 	text-align: center;
+	border-bottom: 0;
 }
 
 h1 {

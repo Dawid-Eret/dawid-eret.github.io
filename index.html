@@ -4,17 +4,24 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<script type="module" src="main.js"></script>
+	<script type="module" src="navigation.js"></script>
 	<title>Dawid Eret</title>
 </head>
 <body>
 	<nav>
-		<div><a href="#top">Top</a></div>
-		<div><a href="#projects">Projects</a></div>
+		<div id="navDivTop"><a id="navTop" href="#top">TOP</a></div>
+		<div id="navDivProjects"><a id="navProjects" href="#projects">PROJECTS</a></div>
+		<div id="navDivEducation"><a id="navEducation" href="#education">EDUCATION</a></div>
+		<div id="navDivExperience"><a id="navExperience" href="#experience">EXPERIENCE</a></div>
+		<div id="navDivAbout"><a id="navAbout" href="#about">ABOUT</a></div>
 	</nav>
-	<section id="top" class="s1"><h1>Dawid Eret</h1></section>
+	<section id="top" class="s1">
+		<div class="overlayBlue"><h1>Dawid Eret</h1></div>
+	</section>
 	<section id="projects" class="s2"></section>
-	<section class="s3"></section>
+	<section id="education" class="s3"></section>
+	<section id="experience" class="s4"></section>
+	<section id="about" class="s5"></section>
 	<footer>This website was made by Dawid Eret</footer>
 </body>
 </html>
