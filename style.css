@@ -15,9 +15,33 @@ nav, section, footer {
 
 nav {
 	background-color: rgb(32, 32, 32);
-	min-height: 10px;
+	min-height: 30px;
 	position: sticky;
 	top: 0;
+	display: flex;
+	padding: 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+
+nav div {
+	background-color: rgb(56, 56, 56);
+	border: 2px;
+	border-color: rgb(3, 3, 3);
+	border-style:groove;
+	width: 75px;
+	text-align: center;
+	padding-top: 3px;
+}
+
+nav a {
+	font-family: Tahoma, sans-serif;
+	color: white;
+}
+
+.s1, .s2, .s3 {
+	scroll-margin-top: 35px;
 }
 
 section.s1 {
@@ -31,6 +55,12 @@ section.s1 {
 	border: 0;
 }
 
+@media only screen and (max-width: 650px) {
+	section.s1 {
+		min-height: 550px;
+	}
+}
+
 section.s2 {
 	min-height: 600px;
 	background-color:rgb(32, 32, 32);
@@ -40,6 +70,11 @@ section.s2 {
 section.s3 {
 	min-height: 600px;
 	background-color: rgb(56, 56, 56);
+}
+
+footer {
+	min-height: 25px;
+	text-align: center;
 }
 
 h1 {
