@@ -1,5 +1,4 @@
 body, nav, section, footer {
-	background-color:rgb(0, 10, 24);
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -7,16 +6,15 @@ body, nav, section, footer {
 }
 
 nav, section, footer {
-	border: 2px;
+	border: 1px;
 	border-left: 0;
 	border-right: 0;
-	border-color: rgb(10, 20, 34);
+	border-color: var(--border-color);
 	border-style:double;
 	padding: 10px;
 }
 
 nav {
-	background-color: rgb(0, 10, 24);
 	min-height: 45px;
 	position: sticky;
 	top: 0;
@@ -29,9 +27,8 @@ nav {
 }
 
 nav div {
-	background-color: rgb(0, 10, 24);
 	text-align: center;
-	min-width: 5vw;
+	min-width: 5dvw;
 	border: 0px;
 	margin: 0;
 	padding: 0;
@@ -39,18 +36,18 @@ nav div {
 }
 
 nav div.selected {
-	background-color: rgb(20, 30, 44);
+	background-color: var(--selected-nav-color);
 }
 
 nav a {
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	color: rgb(255, 255, 255);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: white;
 	text-decoration: none;
 	letter-spacing: 2px;
 }
 
 a {
-	font-size: 20px;
+	font-size: 1.1vw;
 	padding: 0;
 	margin: 0;
 	border: 0;
@@ -58,8 +55,8 @@ a {
 	padding-right: 15px;
 }
 
-div.overlayBlue {
-	background: rgba(10, 20, 34, 0.50);
+div.overlay {
+	background: var(--overlay-color);
 	z-index: 2;
 	min-height: 850px;
 	overflow: hidden;
@@ -70,7 +67,6 @@ div.overlayBlue {
 }
 
 section.s1 {
-	background-color: rgb(10, 20, 34);
 	min-height: 850px;
 	background-image: url("assets/picture-me.webp");
 	background-attachment: fixed;
@@ -83,31 +79,26 @@ section.s1 {
 }
 
 @media only screen and (max-width: 650px) {
-	section.s1, div.overlayBlue {
+	section.s1, div.overlay {
 		min-height: 550px;
 	}
 }
 
 section.s2 {
 	min-height: 600px;
-	background-color:rgb(0, 10, 24);
 	justify-content: center;
 }
 
 section.s3 {
 	min-height: 600px;
-	background-color: rgb(10, 20, 34);
-	border: 0;
 }
 
 section.s4 {
 	min-height: 600px;
-	background-color:rgb(0, 10, 24);
 }
 
 section.s5 {
 	min-height: 600px;
-	background-color: rgb(10, 20, 34);
 }
 
 footer {
@@ -117,28 +108,170 @@ footer {
 }
 
 h1 {
-	font-family: "Courier New", monospace;
+	font-family: serif;
 	font-size: 6vw;
 	text-align: center;
 	text-shadow: 
-		2px 2px 0 #969696,
-		-2px 2px 0 #969696,
-		-2px -2px 0 #969696,
-		2px -2px 0 #969696;
+		2px 2px 0 var(--title-border-color),
+		-2px 2px 0 var(--title-border-color),
+		-2px -2px 0 var(--title-border-color),
+		2px -2px 0 var(--title-border-color);
 	padding-top: 12%;
 	user-select: none;
 }
 
-p {
-	font-family: Tahoma, sans-serif;
+section.s2 ol {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+section.s2 ol li {
+	padding: 4dvw;
+}
+
+section.s2 ol li div {
+	padding: 0;
+}
+
+
+section.s2 ol li div {
+	min-height: 400px;
+	min-width: 400px;
+	max-width: 400px;
+	box-shadow: var(--shadow-color) 20px 20px;
+	border: 2px;
+	border-color: var(--border-color);
+	border-style: solid;
+	margin-top: 20px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding-bottom: 15px;
+}
+
+section.s2 ol li div div h2 {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 0;
+	margin-bottom: 9px;
+	text-align: center;
+	font-size: x-large;
+}
+
+section.s2 ol li div p {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: justify;
+	text-wrap: wrap;
+	font-size: large;
+}
+
+a.projectLink {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	text-align: center;
+	text-wrap: wrap;
+	font-size: large;
+	color:blue;
+	text-decoration: unset;
+	font-family: 'Arial';
+}
+
+p, h2 {
+	font-family: 'Arial';
+}
+
+h2 {
+	font-size: xx-large;
+	letter-spacing: 1px;
+	font-family: 'Arial';
+}
+
+img.inProjects {
+	display: block;
+	width: 400px;
+	border: 1px;
+	border-right: 0;
+	border-left: 0;
+	padding-top: 0;
+	margin-top: 0;
+	border-color: var(--border-color);
+	border-style: solid;
+}
+
+ol li div div.projectCardImg {
+	all: unset;
+	border-top: 1px;
+	border-bottom: 1px;
+	border-left: 0;
+	border-right: 0;
+	border-color: var(--border-color);
+	border-style: solid;
+	width: 100%;
+}
+
+ol li div div.projectCardDate {
+	all: unset;
+	min-height: 30px;
+	width: 100%;
+	background-color: var(--date-background-color);
+	padding-bottom: 10px;
+	border: 0;
+	border-bottom: 1px;
+	border-color: var(--border-color);
+	border-style: solid;
+	text-align: center;
 }
 
 ::-webkit-scrollbar {
 	width: 10px;
-	background: rgb(20, 30, 44);
+	background: #244855;
 }
 
 ::-webkit-scrollbar-thumb {
-	background: rgb(40, 50, 64);
-	cursor:pointer;
+	background: #90AEAD;
+	cursor: pointer;
+}
+
+.cl1 {
+	background-color: #244855;
+}
+
+.cl2 {
+	background-color: #FBE9D0
+}
+
+.cl3 {
+	background-color: #874F41;
+}
+
+.cl4 {
+	background-color: #90AEAD;
+}
+
+.cl5 {
+	background-color: #E64833;
+}
+
+.txt1 {
+	color: #000000;
+}
+
+:root {
+	--border-color: #000000;
+	--shadow-color: #1e3c47;
+	--overlay-color: #90AEAD40;
+	--title-border-color: #00000025;
+	--selected-nav-color: #345865;
+	--date-background-color: #E64833;
 }
