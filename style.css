@@ -213,10 +213,7 @@ img.inProjects {
 
 ol li div div.projectCardImg {
 	all: unset;
-	border-top: 1px;
-	border-bottom: 1px;
-	border-left: 0;
-	border-right: 0;
+	border: 0;
 	border-color: var(--border-color);
 	border-style: solid;
 	width: 100%;
