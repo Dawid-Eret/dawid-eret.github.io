@@ -57,7 +57,7 @@ a {
 }
 
 div.overlay {
-	background: var(--overlay-color);
+	background: none;
 	z-index: 2;
 	min-height: 850px;
 	overflow: hidden;
@@ -77,6 +77,7 @@ section.s1 {
 	border: 0;
 	margin: 0;
 	padding: 0;
+	image-rendering: optimizeQuality;
 }
 
 section.s2 {
@@ -106,14 +107,14 @@ footer {
 
 h1 {
 	font-family: serif;
-	font-size: 6vw;
+	font-size: 6dvw;
 	text-align: center;
 	text-shadow: 
 		2px 2px 0 var(--title-border-color),
 		-2px 2px 0 var(--title-border-color),
 		-2px -2px 0 var(--title-border-color),
 		2px -2px 0 var(--title-border-color);
-	padding-top: 12%;
+	padding-top: 12dvw;
 	user-select: none;
 }
 
@@ -342,7 +343,8 @@ nav.navMobile {
 	}
 	
 	section.s1, div.overlay {
-		min-height: 350px;
+		min-height: 550px;
+		background-position: 78%;
 	}
 
 	img.pin {
@@ -404,6 +406,11 @@ nav.navMobile {
 		padding-top: 8px;
 		min-height: unset;
 	}
+
+	h1 {
+		font-size: 16dvw;
+		padding-top: 2%;
+	}
 }
 
 .cl1 {
@@ -437,7 +444,7 @@ nav.navMobile {
 :root {
 	--border-color: #000000;
 	--shadow-color: #1e3c4770;
-	--overlay-color: #90AEAD40;
+	--overlay-color: #90AEAD00;
 	--title-border-color: #00000025;
 	--selected-nav-color: #345865;
 	--date-background-color: #e69e33;
