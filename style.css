@@ -282,7 +282,65 @@ img.pin {
 	cursor: pointer;
 }
 
+nav.navDesktop {
+	display: flex;
+}
+
+nav.navMobile {
+	display: none;
+}
+
 @media only screen and (max-width: 650px) {
+	nav.navDesktop {
+		display: none;
+	}
+	
+	nav.navMobile {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav.navMobile div {
+		all: unset;
+		padding: 12px;
+		margin: 0px;
+		margin-left: 0;
+		margin-top: 0;
+		width: 100%;
+		border: 0px;
+		border: 1px;
+		border-bottom: 0px;
+		border-color: var(--border-color);
+		border-style: solid;
+		background-color: var(--selected-nav-color);
+		border-left: 0;
+		border-right: 0;
+		border-top: 1;
+	}
+
+	nav.navMobile div.hamburger {
+		min-height: 21px;
+		padding: 0;
+		margin: 0;
+		padding-top: 12px;
+		padding-bottom: 12px;
+		background-position: center;
+		background-image: url("assets/hamburger.webp");
+		background-repeat:no-repeat;
+   		background-size: 25px;
+		background-color: var(--shadow-color);
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	nav.navMobile div a {
+		font-size: large;
+		padding: 3px;
+		margin: 0px;
+		text-align: right;
+	}
+	
 	section.s1, div.overlay {
 		min-height: 350px;
 	}
@@ -311,11 +369,13 @@ img.pin {
 		min-width: 170px;
 		margin-left: 5px;
 		margin-right: 5px;
+		border-radius: 5px;
 	}
 
 	p.tag {
 		margin-left: 5px;
 		margin-right: 5px;
+		border-radius: 5px;
 	}
 
 	section.s2 ol li div div h2 {
