@@ -87,6 +87,7 @@ section.s1 {
 section.s2 {
 	min-height: 600px;
 	justify-content: center;
+	background-image: url("/assets/pattern1.webp");
 }
 
 section.s3 {
@@ -161,11 +162,11 @@ section.s2 ol li div div h2 {
 	padding-right: 15px;
 	padding-bottom: 0;
 	margin-bottom: 9px;
-	text-align: center;
+	text-align: left;
 	font-size: x-large;
 }
 
-section.s2 ol li div p {
+p {
 	margin-top: 10px;
 	margin-bottom: 0px;
 	padding-left: 15px;
@@ -220,7 +221,7 @@ ol li div div.projectCardImg {
 	width: 100%;
 }
 
-ol li div div.projectCardDate {
+ol li div div.projectCardDate, ol li div div.projectCardTitle {
 	all: unset;
 	min-height: 30px;
 	width: 100%;
@@ -230,7 +231,47 @@ ol li div div.projectCardDate {
 	border-bottom: 1px;
 	border-color: var(--border-color);
 	border-style: solid;
+}
+
+ol li div div.projectCardDate {
+	display: flex;
+	justify-content:space-between;
+	padding-bottom: 5px;
+}
+
+p.date {
+	margin-top: 13px;
+}
+
+p.tag {
+	margin: 0;
+	margin-top: 6px;
+	margin-right: 15px;
+	font-size: larger;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 7px;
+	border: 1px;
+	border-color: var(--border-color);
+	border-style: solid;
+	height: 22px;
+	width: 70px;
 	text-align: center;
+	color: white;
+
+}
+
+p.tag.multi {
+	background-color: var(--tag1);
+}
+
+p.tag.java {
+	background-color: var(--tag3);
+}
+
+p.tag.python {
+	background-color: var(--tag2);
 }
 
 ::-webkit-scrollbar {
@@ -269,9 +310,12 @@ ol li div div.projectCardDate {
 
 :root {
 	--border-color: #000000;
-	--shadow-color: #1e3c47;
+	--shadow-color: #1e3c4770;
 	--overlay-color: #90AEAD40;
 	--title-border-color: #00000025;
 	--selected-nav-color: #345865;
 	--date-background-color: #E64833;
+	--tag1: black;
+	--tag2: black;
+	--tag3: black;
 }
