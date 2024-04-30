@@ -79,12 +79,6 @@ section.s1 {
 	padding: 0;
 }
 
-@media only screen and (max-width: 650px) {
-	section.s1, div.overlay {
-		min-height: 550px;
-	}
-}
-
 section.s2 {
 	min-height: 600px;
 	justify-content: center;
@@ -93,6 +87,7 @@ section.s2 {
 
 section.s3 {
 	min-height: 600px;
+	background-image: url("/assets/pattern2.webp");
 }
 
 section.s4 {
@@ -287,6 +282,70 @@ img.pin {
 	cursor: pointer;
 }
 
+@media only screen and (max-width: 650px) {
+	section.s1, div.overlay {
+		min-height: 350px;
+	}
+
+	img.pin {
+		top: -40px;
+		right: -15px;
+		width: 50px;
+	}
+
+	img.inProjects {
+		width: 250px;
+	}
+
+	section.s2 ol li div {
+		max-width: unset;
+		min-width: unset;
+		width: 250px;
+	}
+
+	section.s2 ol li div.cl2.txt1 {
+		box-shadow: var(--shadow-color) 4px 8px;
+	}
+
+	p.date {
+		min-width: 170px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	p.tag {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	section.s2 ol li div div h2 {
+		font-size: medium;
+		min-height: unset;
+		max-height: unset;
+		margin-bottom: 0px;
+		margin-top: 11px;
+	}
+
+	p.tag, p.date {
+		font-size: smaller;
+		min-height: unset;
+		max-height: unset;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	a.projectLink, p {
+		font-size: small;
+	}
+
+	footer {
+		font-size: smaller;
+		padding-top: 8px;
+		min-height: unset;
+	}
+}
+
 .cl1 {
 	background-color: #244855;
 }
@@ -307,6 +366,10 @@ img.pin {
 	background-color: #E64833;
 }
 
+.cl6 {
+	background-color: #55244e;
+}
+
 .txt1 {
 	color: #000000;
 }
@@ -317,7 +380,7 @@ img.pin {
 	--overlay-color: #90AEAD40;
 	--title-border-color: #00000025;
 	--selected-nav-color: #345865;
-	--date-background-color: #E64833;
+	--date-background-color: #e69e33;
 	--tag1: rgb(0, 0, 0);
 	--tag2: rgb(59, 59, 59);
 	--tag3:rgb(59, 59, 59);
