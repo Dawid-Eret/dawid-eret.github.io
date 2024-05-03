@@ -7,70 +7,76 @@
 	<meta name="keywords" content="Dawid, Eret">
 	<meta name="author" content="Dawid Eret">
 	<link rel="stylesheet" href="style.css">
-	<script type="module" src="navigation.js"></script>
-	<title>Dawid Eret</title>
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
+	<script type="module" src="navigation.js" defer></script>
+	<title> Dawid Eret </title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Jersey+10&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+	</style>
 </head>
-<body class="cl1">
-	<nav id="navDesktop" class="cl1 navDesktop">
-		<div class="cl1" id="navDivTop"><a id="navTop" href="#top">TOP</a></div>
-		<div class="cl1" id="navDivProjects"><a id="navProjects" href="#projects">PROJECTS</a></div>
-		<div class="cl1" id="navDivEducation"><a id="navEducation" href="#education">EDUCATION</a></div>
-		<div class="cl1" id="navDivExperience"><a id="navExperience" href="#experience">EXPERIENCE</a></div>
-		<div class="cl1" id="navDivAbout"><a id="navAbout" href="#about">ABOUT</a></div>
-	</nav>
-	<nav id="navMobile" class="cl1 navMobile">
-		<div class="cl1 hamburger" id="navDivHamburger"></div>
-		<a href="#top"><div class="cl1 hambNavList" id="navDivTopM"><a id="navTop" href="#top">TOP</a></div></a>
-		<a href="#projects"><div class="cl1 hambNavList" id="navDivProjectsM"><a id="navProjects" href="#projects">PROJECTS</a></div></a>
-		<a href="#education"><div class="cl1 hambNavList" id="navDivEducationM"><a id="navEducation" href="#education">EDUCATION</a></div></a>
-		<a href="#experience"><div class="cl1 hambNavList" id="navDivExperienceM"><a id="navExperience" href="#experience">EXPERIENCE</a></div></a>
-		<a href="#about"><div class="cl1 hambNavList" id="navDivAboutM"><a id="navAbout" href="#about">ABOUT</a></div></a>
-	</nav>
-	<section id="top" class="s1 cl1">
-		<div class="overlay"><h1>Dawid Eret</h1></div>
-	</section>
-	<section id="projects" class="s2 cl1">
-		<ol>
-			<li>
-				<div class="cl2 txt1">
-					<div class="projectCardTitle"><h2>Youtube Channel</h2><img alt="pin didn't load" class="pin" src="/assets/pin.webp"></div>
-					<div class="projectCardImg"><img class="inProjects" alt="picture failed to load" src="/assets/youtube.webp"></div>
-					<div class="projectCardDate"><p class="date">2022 - (ongoing)</p><p class="tag multi">Multiple</p></div>
-					<p>	Programming focused YouTube channel where I post tutorials and courses for different languages, such as: Java, Python, 
-						and others <a target="_blank" class="projectLink" href="https://www.youtube.com/@definitelynoah">(channel link)</a>.</p>
-					<p> It started as a social media assignment back in college, but then turned into a hobby which I also use as a learning opportunity.</p>
-					<p> I like to think that you only really understand a topic, if you can explain it in simple terms.</p>
+	<body>
+		<nav id="navbar" class="navbar"></nav>
+		<section id="image-top" class="image-top"><h1 id="title-top" class="title-top"> Dawid Eret </h1></section>
+		<div id="div-projects" class="div-projects">
+			<h1 id="projects-h1" class="projects-h1">Personal Projects</h1>
+			<section id="section-projects" class="section-projects">
+				<div id="card-project" class="card-project">
+					<img id="card-pin" class="card-pin" src="assets/pin.webp" alt="pin didn't load">
+					<div id="card-title" class="card-title">
+						<h2 id="card-h2" class="card-h2"> YouTube Channel </h2>
+					</div>
+					<div id="card-image" class="card-image">
+						<img id="card-image-img" class="card-image-img" src="assets/youtube.webp" alt="picture of the youtube channel homepage">
+					</div>
+					<div id="card-tagbar" class="card-tagbar">
+						<h2 id="tag-h2" class="tag-h2"> 2022 - (ongoing) </h2>
+						<h2 id="tag-h2" class="tag-h2"> Python </h2>
+						<h2 id="tag-h2" class="tag-h2"> Java </h2>
+					</div>
+					<div id="card-description" class="card-description">
+						<p id="card-p" class="card-p"> Programming focused YouTube channel where I post tutorials and courses for different languages, such as: Java, Python, and others (channel link). </p>
+						<p id="card-p" class="card-p"> It started as a social media assignment back in college, but then turned into a hobby which I also use as a learning opportunity. </p>
+						<p id="card-p" class="card-p"> I like to think that you only really understand a topic, if you can explain it in simple terms. </p>
+					</div>
 				</div>
-			</li>
-			<li>
-				<div class="cl2 txt1">
-					<div class="projectCardTitle"><h2>NoteMerge [App]</h2><img alt="pin didn't load" class="pin" src="/assets/pin.webp"></div>
-					<div class="projectCardImg"><img class="inProjects" alt="picture failed to load" src="/assets/notemerge.webp"></div>
-					<div class="projectCardDate"><p class="date">April 2024 (wip)</p><p class="tag java">Java</p></div>
-					<p> Android application I'm working on made in Java. It's an application for notes, tasks, and deadlines.
-						 What makes it different than most other apps is the option to share your notes etc. with other people.</p>
-					<p> To add a person to your friends list you need their email, and they need to accept it.</p>
-					<p>You will also be able to share to groups rather than individuals.</p>
+				<div id="card-project" class="card-project">
+					<img id="card-pin" class="card-pin" src="assets/pin.webp" alt="pin didn't load">
+					<div id="card-title" class="card-title">
+						<h2 id="card-h2" class="card-h2"> NoteMerge [App] </h2>
+					</div>
+					<div id="card-image" class="card-image">
+						<img id="card-image-img" class="card-image-img" src="assets/notemerge.webp" alt="picture of the project sketch">
+					</div>
+					<div id="card-tagbar" class="card-tagbar">
+						<h2 id="tag-h2" class="tag-h2"> April 2024 (wip) </h2>
+						<h2 id="tag-h2" class="tag-h2"> Java </h2>
+					</div>
+					<div id="card-description" class="card-description">
+						<p id="card-p" class="card-p"> Android application I'm working on made in Java. It's an application for notes, tasks, and deadlines. What makes it different than most other apps is the option to share your notes etc. with other people. </p>
+						<p id="card-p" class="card-p"> To add a person to your friends list you need their email, and they need to accept it. </p>
+						<p id="card-p" class="card-p"> You will also be able to share to groups rather than individuals. </p>
+					</div>
 				</div>
-			</li>
-			<li>
-				<div class="cl2 txt1">
-					<div class="projectCardTitle"><h2>TypoChamp [Game]</h2><img alt="pin didn't load" class="pin" src="/assets/pin.webp"></div>
-					<div class="projectCardImg"><img class="inProjects" alt="picture failed to load" src="/assets/typochamp.webp"></div>
-					<div class="projectCardDate"><p class="date">2023 Hackathon (24 hours)</p><p class="tag python">Python</p></div>
-					<p> Simple game written in python, made as a group project during HackNotts84. The hackathon allowed pretty much any project to be made in 24 hours 
-						<a target="_blank" class="projectLink" href="https://www.youtube.com/watch?v=yyPHw4a3_8c">(gameplay video)</a>.</p>
-					<p> Most of the game code was written by me. One of the team members made a 
-						<a target="_blank" class="projectLink" href="http://typochamp.com/">website</a> 
-						where the project files can be downloaded.</p>
-					<p>  The only requirement is PyGame. It's a scored typing game with falling words.</p>
-				</div>
-			</li>
-		</ol>
-	</section>
-	<section id="education" class="s3 cl6"></section>
-	<section id="experience" class="s4 cl1"></section>
-	<section id="about" class="s5 cl4"></section>
-	<footer class="cl1">This website was made by Dawid Eret</footer>
-</body>
+				<div id="card-project" class="card-project">
+					<img id="card-pin" class="card-pin" src="assets/pin.webp" alt="pin didn't load">
+					<div id="card-title" class="card-title">
+						<h2 id="card-h2" class="card-h2"> TypoChamp [Game] </h2>
+					</div>
+					<div id="card-image" class="card-image">
+						<img id="card-image-img" class="card-image-img" src="assets/typochamp.webp" alt="picture of the game">
+					</div>
+					<div id="card-tagbar" class="card-tagbar">
+						<h2 id="tag-h2" class="tag-h2"> 2023 Hackathon (24 hours) </h2>
+						<h2 id="tag-h2" class="tag-h2"> Python </h2>
+					</div>
+					<div id="card-description" class="card-description">
+						<p id="card-p" class="card-p"> Simple game written in python, made as a group project during HackNotts84. The hackathon allowed pretty much any project to be made in 24 hours (gameplay video). </p>
+						<p id="card-p" class="card-p"> Most of the game code was written by me. One of the team members made a website where the project files can be downloaded. </p>
+						<p id="card-p" class="card-p"> The only requirement is PyGame. It's a scored typing game with falling words. </p>
+					</div>
+			</section>
+		</div>
+		
+	</body>
 </html>
