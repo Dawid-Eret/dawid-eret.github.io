@@ -3,7 +3,8 @@ div.card-project, div.card-title, h2.card-h2, div.card-image,
 img.card-pin, img.card-image-img, div.card-tagbar, h2.tag-h2,
 div.card-description, p.card-p, div.div-projects, h1.projects-h1,
 nav.navbar, .nav-button, h1.title-top, div.div-education, a,
-div.div-top {
+div.div-top, section.section-education, div.university-desc,
+div.year-div, img.uni-img, h2.uni-title, p.uni-desc {
 	border: 0;
 	margin: 0;
 	padding: 0;
@@ -43,10 +44,11 @@ a:active.intext-link {
 	--scroll-dragbar: #90AEAD;
 	--card-title-background: #e69e33;
 	--card-title-background2:rgb(112, 73, 15);
-	--shadow-color: #00000050;
+	--shadow-color: #00000080;
 	--navbar-color: #345865;
 	--navbar-color-alt: #426b7a;
 	--navbar-color-alt2: #2d4e5a;
+	--edu-background: #2d4e5a;
 
 	--card-width: 23dvw;
 	--card-height: calc(var(--card-width) * 1.7);
@@ -106,7 +108,7 @@ section.image-top {
 	background: linear-gradient(0deg, #00000022 30%, #ffffff11 100%);
 	min-height: 95dvh;
 	max-height: 95dvh;
-	padding-top: 16%;
+	padding-top: 36dvh;
 }
 
 div.div-top {
@@ -152,7 +154,7 @@ div.card-project {
 	border-color: var(--default-border);
 	margin-top: 5dvh;
 	margin-bottom: 5dvh;
-	filter: drop-shadow(1dvw 1dvw 0.2dvw var(--shadow-color));
+	filter: drop-shadow(0.7dvw 0.7dvw 0.2dvw var(--shadow-color));
 	margin-left: 3dvw;
 	margin-right: 3dvw;
 	position: relative;
@@ -245,4 +247,66 @@ div.div-education {
 	border-color: var(--default-border);
 	background-image: url(assets/pattern2.webp);
 	background-size: 10dvw;
+}
+
+section.section-education {
+	display: grid;
+	justify-content: center;
+	padding-bottom: 5dvh;
+	padding-top: 3dvh;
+}
+
+div.university-desc {
+	background-color: var(--edu-background);
+	min-width: 30dvw;
+	max-width: 30dvw;
+	grid-column: 1;
+	grid-row: 1 / span 2;
+	border: 1px;
+	border-style: solid;
+	border-color: var(--default-border);
+	margin-right: 1dvw;
+	margin-top: 1dvw;
+	filter: drop-shadow(0.7dvw 0.7dvw 0.2dvw var(--shadow-color));
+}
+
+div.year-div {
+	background-color: var(--edu-background);
+	min-width: 50dvw;
+	max-width: 50dvw;
+	grid-column: 2;
+	border: 1px;
+	border-style: solid;
+	border-color: var(--default-border);
+	margin-top: 1dvw;
+	filter: drop-shadow(0.7dvw 0.7dvw 0.2dvw var(--shadow-color));
+}
+
+img.uni-img {
+	max-width: inherit;
+	border-bottom: 1px;
+	border-style: solid;
+	border-color: var(--default-border);
+}
+
+h2.uni-title {
+	text-align: center;
+	padding: 0.6dvw;
+	padding-left: 1dvw;
+	padding-right: 1dvw;
+	margin-top: -4px;
+	margin-bottom: 0.8dvw;
+	font-size: 1.3dvw;
+	color: rgb(150, 255, 241);
+	background-color: var(--shadow-color);
+}
+
+p.uni-desc {
+	text-align: justify;
+	padding-left: 1dvw;
+	padding-right: 1dvw;
+	padding-bottom: 1dvw;
+	font-size: 1dvw;
+	color: white;
+	font-weight: 400;
 }
