@@ -5,30 +5,38 @@ function navButtonAppend(name, href) {
     nav.textContent = name;
     nav.href = href;
     nav.classList.add("nav-button");
-    nav.addEventListener("click", shootConfetti);
+    nav.addEventListener("click", () => {
+        shootConfetti(0, 315);
+        shootConfetti(1, 225);
+    });
     navbar.appendChild(nav);
 }
 
 function navbarInitialise() {
-    navButtonAppend("TOP", "#image-top");
+    navButtonAppend("TOP", "#div-top");
     navButtonAppend("PROJECTS", "#div-projects");
+    navButtonAppend("EDUCATION", "#div-education");
 }
 
 navbarInitialise();
 
-function shootConfetti() {
+function shootConfetti(xpos, angle) {
     confetti({
-        angle: 270,
+        angle: angle,
         origin: {
-            x: 0.5,
-            y: -1
+            x: xpos,
+            y: 0
         },
-        spread: 270,
-        particleCount: 200,
-        startVelocity: 150,
+        spread: 90,
+        particleCount: 90,
+        startVelocity: 80,
+        gravity: -1,
         flat: true,
         zIndex: 9,
-        colors: ["#FFFFFF"],
-        ticks: 100
+        colors: ["FFFFFF", "AAAAAA", "555555"],
+        ticks: 100,
+        scalar: 0.3,
+        decay: 0.91,
+        shapes: ["square"]
     });
 }
