@@ -106,7 +106,7 @@ section.image-top {
 	background: linear-gradient(0deg, #00000022 30%, #ffffff11 100%);
 	min-height: 95dvh;
 	max-height: 95dvh;
-	align-content: center;
+	padding-top: 16%;
 }
 
 div.div-top {
