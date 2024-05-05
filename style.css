@@ -4,20 +4,21 @@ img.card-pin, img.card-image-img, div.card-tagbar, h2.tag-h2,
 div.card-description, p.card-p, div.div-projects, h1.projects-h1,
 nav.navbar, .nav-button, h1.title-top, div.div-education, a,
 div.div-top, section.section-education, div.university-desc,
-div.year-div, img.uni-img, h2.uni-title, p.uni-desc {
+div.year-div, img.uni-img, h2.uni-title, p.uni-desc, p.sem-title,
+ol.sem-list, li.sem-li, div.div-sem, div.div-year-noT, h2.sem-titleT {
 	border: 0;
 	margin: 0;
 	padding: 0;
 	user-select: none;
 }
 
-h1, h2, p, .nav-button {
+h1, h2, p, .nav-button, p.sem-title {
 	font-family: "Francois One", sans-serif;
   	font-weight: 400;
   	font-style: normal;
 }
 
-p, a {
+p, a, li {
 	font-family: "Ubuntu Sans", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 500;
@@ -48,7 +49,9 @@ a:active.intext-link {
 	--navbar-color: #345865;
 	--navbar-color-alt: #426b7a;
 	--navbar-color-alt2: #2d4e5a;
-	--edu-background: #2d4e5a;
+	--edu-background: #4d3512;
+	--edu-background2: #e69e33;
+	--edu-background3: #e69e33;
 
 	--card-width: 23dvw;
 	--card-height: calc(var(--card-width) * 1.7);
@@ -268,6 +271,7 @@ div.university-desc {
 	margin-right: 1dvw;
 	margin-top: 1dvw;
 	filter: drop-shadow(0.7dvw 0.7dvw 0.2dvw var(--shadow-color));
+	border-radius: 1dvw;
 }
 
 div.year-div {
@@ -280,6 +284,8 @@ div.year-div {
 	border-color: var(--default-border);
 	margin-top: 1dvw;
 	filter: drop-shadow(0.7dvw 0.7dvw 0.2dvw var(--shadow-color));
+	display:grid;
+	border-radius: 1dvw;
 }
 
 img.uni-img {
@@ -287,6 +293,8 @@ img.uni-img {
 	border-bottom: 1px;
 	border-style: solid;
 	border-color: var(--default-border);
+	border-top-left-radius: 1dvw;
+	border-top-right-radius: 1dvw;
 }
 
 h2.uni-title {
@@ -294,11 +302,31 @@ h2.uni-title {
 	padding: 0.6dvw;
 	padding-left: 1dvw;
 	padding-right: 1dvw;
-	margin-top: -4px;
 	margin-bottom: 0.8dvw;
 	font-size: 1.3dvw;
-	color: rgb(150, 255, 241);
-	background-color: var(--shadow-color);
+	color: black;
+	background-color: var(--edu-background2);
+	margin-top: -4px;
+	border-bottom: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+h2.sem-titleT {
+	text-align: center;
+	padding: 0.6dvw;
+	padding-left: 0.5dvw;
+	padding-right: 0.5dvw;
+	font-size: 1.3dvw;
+	color: black;
+	background-color: var(--edu-background2);
+	grid-row: 1;
+	grid-column: 1 / span 2;
+	border-bottom: 1px;
+	border-color: black;
+	border-style: solid;
+	border-top-left-radius: 1dvw;
+	border-top-right-radius: 1dvw;
 }
 
 p.uni-desc {
@@ -308,5 +336,68 @@ p.uni-desc {
 	padding-bottom: 1dvw;
 	font-size: 1dvw;
 	color: white;
-	font-weight: 400;
+	font-weight: 200;
+}
+
+div.div-year-noT {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+p.sem-title {
+	font-size: 1.3dvw;
+	color: black;
+	background-color: var(--edu-background3);
+	text-align: center;
+	padding-top: 0.6dvw;
+	padding-bottom: 0.6dvw;	
+	padding-left: 0.5dvw;
+	padding-right: 0.5dvw;
+
+	border-bottom: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+div.div-sem.semester2 {
+	border-left: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+ol.sem-list {
+	list-style: none;
+	height: 100%;
+
+}
+
+li.sem-li {
+	font-size: 1dvw;
+	color: white;
+	font-weight: 200;
+	padding-left: 0.7dvw;
+	padding-right: 0.7dvw;
+	padding-top: 0.4dvw;
+	padding-bottom: 0.4dvw;
+	text-align: end;
+	border-bottom: 0.5px;
+	border-color: black;
+	border-style: dotted;
+}
+
+li.sem-li strong {
+	font-weight: 500;
+	color: wheat;
+	padding-left: 1dvw;
+}
+
+li.sem-li.lastsemli {
+	border: 0;
+	border-style: none;
+}
+
+div.edu-rightcol {
+	grid-column: 2;
 }
