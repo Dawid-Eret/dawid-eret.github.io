@@ -49,9 +49,9 @@ a:active.intext-link {
 	--navbar-color: #345865;
 	--navbar-color-alt: #426b7a;
 	--navbar-color-alt2: #2d4e5a;
-	--edu-background: #4d3512;
-	--edu-background2: #e69e33;
-	--edu-background3: #e69e33;
+	--edu-background: #2b5745;
+	--edu-background2: #69cca3;
+	--edu-background3: #69cca3;
 
 	--card-width: 23dvw;
 	--card-height: calc(var(--card-width) * 1.7);
@@ -278,7 +278,7 @@ div.year-div {
 	background-color: var(--edu-background);
 	min-width: 50dvw;
 	max-width: 50dvw;
-	grid-column: 2;
+	grid-column: 4;
 	border: 1px;
 	border-style: solid;
 	border-color: var(--default-border);
@@ -370,7 +370,6 @@ div.div-sem.semester2 {
 ol.sem-list {
 	list-style: none;
 	height: 100%;
-
 }
 
 li.sem-li {
